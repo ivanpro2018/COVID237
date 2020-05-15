@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EssaiSymptomeChrisController!{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <section class="">
+        {% for symptome in symptomes %}
+        <div class="">
+            <p><h3>Symptome N° {{ symptome.id }} </h3></p>
+        <div class="">
+            <p>{{ symptome.libelle }}</p>
+            <p>{{ date | date ("d/m/y") }}</p>
+        </div>
+<div><img src="{{ asset ('theme/images/loc.png') }}" width="100" height="200">
+ </div>
+        </div>
+        {% endfor %}
+    </section>
+</div>
+{% endblock %}
