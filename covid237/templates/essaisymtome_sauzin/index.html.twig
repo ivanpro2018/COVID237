@@ -1,0 +1,31 @@
+
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EssaisymtomeSauzinController!{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+    <section class="">
+        
+        {% for symptome in symptomes %}
+
+            <div class=""> 
+
+                <p><h3> Symptomes N° {{symptome.id}}</h3> </p>
+                
+                <div class=""> 
+                    <div> <img src="{{ asset ('theme/images/about.jpg')  }}" heigt="180" width=320 /> </div>
+                    <p> {{symptome.libelle}} </p>
+                    <p> {{  date|date("d/m/y")  }} </p>
+                
+                </div>
+
+            </div>
+        {% endfor %}
+    </section>
+ </div>   
+{% endblock %}
+
