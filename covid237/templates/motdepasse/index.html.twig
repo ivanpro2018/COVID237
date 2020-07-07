@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MotdepasseController!{% endblock %}
+
+{% block body %}
+
+  
+    <div id= "container" >
+
+            <form name="reinitialiser"  method="POST">
+                Réinitialisation de mot de passe
+                
+               <label><b>Email ou Numéro de télephone</b></label>
+               <input type="text" placeholder="Entrer Email ou Numéro de télephone" name="username" required>
+
+                <input type="submit" id='submit' value='VALIDATE' >
+                
+            </form>
+
+        </div>    
+
+{% endblock %}
